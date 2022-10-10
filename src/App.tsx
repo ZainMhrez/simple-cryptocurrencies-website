@@ -6,7 +6,7 @@ const App = () => {
   const queryClient = new QueryClient();
 
   return (
-    <Router>
+    <Router basename="/simple-cryptocurrencies-website">
       <QueryClientProvider client={queryClient}>
         <Header />
         <Routes>
