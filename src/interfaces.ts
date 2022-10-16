@@ -1,4 +1,5 @@
 export interface ICoins {
+  [x: string]: any;
   id: string;
   symbol: string;
   name: string;
@@ -11,6 +12,7 @@ export interface ICoins {
 }
 
 export interface IExchange {
+  [x: string]: any;
   id: string;
   name: string;
   year_established: number;

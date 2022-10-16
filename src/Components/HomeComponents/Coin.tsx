@@ -12,7 +12,7 @@ const Coin = ({ coinData }: { coinData: ICoins }) => {
           <img
             src={coinData.image}
             alt={coinData.name}
-            className="w-10 aspect-4/3 object-contain"
+            className="w-8 h-8 aspect-3/2 object-cover"
           />
         </div>
         <ul className="pt-4">

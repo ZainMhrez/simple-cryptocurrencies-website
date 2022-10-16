@@ -1,3 +1,5 @@
+import { lazy } from "react";
+
 // Import Pages
 import HomePage from "../Pages/HomePage";
 import ExchangesListPage from "../Pages/ExchangesListPage";
@@ -7,20 +9,24 @@ import Header from "../Components/Shared/Header";
 import Footer from "../Components/Shared/Footer";
 
 // import Home components
-import CoinsPaginated from "../Components/HomeComponents/CoinsPaginated";
 import Coin from "../Components/HomeComponents/Coin";
+const CoinsInfinite = lazy(
+  () => import("../Components/HomeComponents/CoinsInfinite")
+);
 
 // import ExchangesList Components
 import Exchange from "../Components/ExchangeComponents/Exchange";
-import ExchangesPaginated from "../Components/ExchangeComponents/ExchangesPaginated";
+const ExchangesInfinite = lazy(
+  () => import("../Components/ExchangeComponents/ExchangesInfinite")
+);
 
 export {
   HomePage,
   ExchangesListPage,
   Header,
   Footer,
-  CoinsPaginated,
+  CoinsInfinite,
   Coin,
-  ExchangesPaginated,
+  ExchangesInfinite,
   Exchange,
 };
