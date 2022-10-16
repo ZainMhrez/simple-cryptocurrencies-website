@@ -11,7 +11,7 @@ const Exchange = ({ exchangeData }: { exchangeData: IExchange }) => {
           <img
             src={exchangeData.image}
             alt={exchangeData.name}
-            className="w-10 aspect-4/3 object-contain"
+            className="w-8 h-8 aspect-3/2 object-cover"
           />
         </div>
         <ul className="pt-4">
